@@ -1,0 +1,558 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.colorOrange {
+    color: orange;
+}
+
+.colorWhite {
+    color: white;
+}
+
+.padding10px {
+    padding: 10px;
+}
+
+.visibilityHidden {
+    visibility: hidden;
+}
+
+.bgGray {
+    background-color: gray;
+}
+
+.bgOrange {
+    background-color: orange;
+}
+
+.width200px {
+    width: 200px;
+}
+
+.bgWhite {
+    background-color: white;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+.textCenter {
+    text-align: center;
+}
+
+.btnStyle {
+    padding: 20px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+}
+
+.nav1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(36, 32, 32);
+    color: white;
+    padding: 15px;
+}
+
+.nav1-firsticons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.nav1-secondicons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.nav1-secondicons-language {
+    display: flex;
+    gap: 2px;
+    color: orange;
+}
+
+.nav1 h4:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.nav1 i:hover {
+    color: orangered;
+    cursor: pointer;
+}
+
+/* Section 1 */
+
+.section1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    background: url(./images/wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    height: 90vh;
+    padding: 20px;
+}
+
+.section1-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.section1-navbar {
+    display: flex;
+    gap: 15px;
+    color: white;
+}
+
+.hoverOrange:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.section1-navbar-home, .section1-navbar-about, .section1-navbar-rooms-suites, .section1-navbar-blog {
+    display: flex;
+    gap: 5px;
+}
+
+.section1-navbar-home, .section1-navbar-about, .section1-navbar-rooms-suites, .section1-navbar-blog {
+    position: relative;
+    cursor: pointer;
+}
+
+.section1-navbar-home:hover .home-content {
+    display: block;
+}
+
+.section1-navbar-about:hover .about-content {
+    display: block;
+}
+.section1-navbar-rooms-suites:hover .room-content {
+    display: block;
+}
+.section1-navbar-blog:hover .blog-content {
+    display: block;
+}
+.home-content, .about-content, .room-content, .blog-content {
+    position: absolute;
+    top: 40px;
+    border: 1px solid black;
+background-color: orange;
+width: 200px;
+display: none;
+color: white;
+}
+
+.home-content-text, .about-content-text, .room-content-text, .blog-content-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.home-content-text:hover {
+    background-color: black;
+}
+.home-content-text:hover .visibilityHidden {
+    visibility: visible;
+}
+.about-content-text:hover {
+    background-color: black;
+}
+.about-content-text:hover .visibilityHidden {
+    visibility: visible;
+}
+.room-content-text:hover {
+    background-color: black;
+}
+.room-content-text:hover .visibilityHidden {
+    visibility: visible;
+}
+.blog-content-text:hover {
+    background-color: black;
+}
+.blog-content-text:hover .visibilityHidden {
+    visibility: visible;
+}
+.section1-logo i {
+    color: orange;
+    font-size: 3rem;
+}
+
+.section1-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 100px;
+}
+
+
+.section1-title h1:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.section1-title h6 {
+    font-size: 20px;
+}
+
+.section1-description {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section1-description .section1-rows-center{
+    color: white;
+    display: flex;
+    gap: 20px;
+}
+
+.section1-description .section1-rows-center a {
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.section1-description .section1-rows-center a:nth-child(1) {
+    color: orange;
+    border-bottom: 2px solid white;
+}
+
+.section1-description .section1-rows-center a:nth-child(2):hover {
+    color: orange;
+    border-bottom: 2px solid white;
+}
+
+.section1-description .section1-rows-center a:nth-child(3):hover {
+    color: orange;
+    border-bottom: 2px solid white;
+}
+
+.section1-description .section1-rows-center{
+    margin-right: 100px;
+}
+
+.section1-description .section1-description-phone {
+    display: flex;
+    gap: 10px;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.section1-rows-right i {
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.section1-rows-right i:hover {
+    background-color: orange;
+}
+
+.section1-logo img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Section 2 */
+
+.section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+
+}
+
+.section2-left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+}
+
+.section2-left-side p {
+    width: 400px;
+}
+.section2-left-side-img {
+    position: absolute;
+    left: 500px;
+    top: 200px;
+
+}
+
+.section2-left-side-img-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+    left: 5px;
+    background-color: orange;
+    color: white;
+    width: 300px;
+}
+.section2-left-side h4 {
+    font-size: 2rem;
+}
+
+.section2-left-side h1 {
+    font-size: 2rem;
+}
+
+.section2-left-side-officer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+hr {
+    width: 200px;
+    border-bottom: 3px solid gray;
+    
+}
+.section2-left-side-officer img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 0px black;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+}
+.section2-left-side-reservation {
+    position: absolute;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    top: 650px;
+    border: 1px solid rgb(238, 238, 238);
+    padding: 20px;
+    background-color: white;
+}
+
+.section2-left-side-reservation h4 {
+    font-size: 1.3rem;
+}
+
+.check-availability {
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 100px;
+}
+.check-availability:hover {
+    background-color: black;
+    transition: background-color .3s linear;
+}
+.select-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Section 3 */
+
+.section3 {
+    padding: 50px;
+}
+
+.section3 .room {
+    position: relative;
+    margin-top: 20px;
+}
+
+.section3-rooms {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.room-description {
+    border: 2px solid gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
+
+}
+
+.room-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.room-top h6 {
+    font-size: 1rem;
+}
+.room-bottom {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    display: none;
+
+}
+
+.room-description:hover .room-bottom {
+    display: flex;
+}
+.room-description:hover .room-top {
+    border-bottom: 1px solid gray;
+
+}
+.room-bottom-descriptions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.room-bottom-icons i {
+    background-color: gray;
+    padding: 7px;
+    border-radius: 25px;
+    color: white;
+
+}
+
+.room-bottom-star {
+    display: flex;
+    background-color: orange;
+    color: white;
+    padding: 5px;
+    gap: 10px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.circle2:hover {
+    background-color: orange;
+}
+.circle3:hover {
+    background-color: orange;
+}
+.section3-end-icons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+.section3-end-icons i {
+    font-size: 2.3rem;
+}
+
+/* Section 4 */
+
+.section4 {
+    padding: 50px;
+}
+.section4-facilities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.row-box {
+    border: 1px solid gray;
+    padding: 20px 0px;
+    padding: 10px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.row-box i {
+    font-size: 3rem;
+    color: orange;
+}
+
+.row1, .row2, .row3 {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.row2 {
+    margin-top: 50px;
+}
+
+.row3 {
+    margin-top: 100px;
+}
+
+.section4-facilities img {
+    width: 100%;
+    height: 300px;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+/* Section 5  */
+
+.section5 {
+    padding: 50px;
+    background-color: rgb(218, 208, 208);
+}
+
+.section5-rooms-best-price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section5-room {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.section5-room-description {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px;
+    background-color: white;
+}
+.section5-room-img {
+    margin-top: 25px;
+}
+
+.service {
+    display: flex;
+    gap: 10px;
+}
+@keyframes btnStyle {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
