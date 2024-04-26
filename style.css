@@ -5,16 +5,16 @@
 
 }
 
+.bgBlack {
+    background-color: black;
+}
+
 .colorOrange {
     color: orange;
 }
 
 .colorWhite {
     color: white;
-}
-
-.padding10px {
-    padding: 10px;
 }
 
 .visibilityHidden {
@@ -44,6 +44,10 @@
     text-align: center;
 }
 
+.dFlex {
+    display: flex;
+}
+
 .btnStyle {
     padding: 20px;
     background-color: orange;
@@ -51,8 +55,11 @@
     cursor: pointer;
     border-radius: 30px;
     border: none;
+    transition: transform 1s ease;
 }
-
+.btnStyle:hover {
+    transform: scale(1.1);
+}
 .nav1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -61,32 +68,14 @@
     padding: 15px;
 }
 
-.nav1-firsticons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-
-.nav1-secondicons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-
 .nav1-secondicons-language {
-    display: flex;
-    gap: 2px;
     color: orange;
 }
 
 .nav1 h4:hover {
     color: orange;
     cursor: pointer;
-}
-
-.nav1 i:hover {
-    color: orangered;
-    cursor: pointer;
+    transition: .5s ease;
 }
 
 /* Section 1 */
@@ -100,31 +89,20 @@
     background-size: cover;
     background-color: black;
     height: 90vh;
-    padding: 20px;
 }
 
 .section1-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: sticky;
     top: 0;
 }
 
 .section1-navbar {
-    display: flex;
-    gap: 15px;
     color: white;
 }
 
 .hoverOrange:hover {
     color: orange;
     cursor: pointer;
-}
-
-.section1-navbar-home, .section1-navbar-about, .section1-navbar-rooms-suites, .section1-navbar-blog {
-    display: flex;
-    gap: 5px;
 }
 
 .section1-navbar-home, .section1-navbar-about, .section1-navbar-rooms-suites, .section1-navbar-blog {
@@ -155,33 +133,35 @@ display: none;
 color: white;
 }
 
-.home-content-text, .about-content-text, .room-content-text, .blog-content-text {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-}
-
 .home-content-text:hover {
     background-color: black;
+    transition: .5s ease;
+
 }
 .home-content-text:hover .visibilityHidden {
     visibility: visible;
 }
 .about-content-text:hover {
     background-color: black;
+    transition: .5s ease;
+
 }
 .about-content-text:hover .visibilityHidden {
     visibility: visible;
 }
 .room-content-text:hover {
     background-color: black;
+    transition: .5s ease;
+
 }
 .room-content-text:hover .visibilityHidden {
     visibility: visible;
+
 }
 .blog-content-text:hover {
     background-color: black;
+    transition: .5s ease;
+
 }
 .blog-content-text:hover .visibilityHidden {
     visibility: visible;
@@ -192,10 +172,6 @@ color: white;
 }
 
 .section1-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
     margin-top: 100px;
 }
 
@@ -210,16 +186,12 @@ color: white;
 }
 
 .section1-description {
-    display: flex;
     color: white;
-    justify-content: space-between;
-    align-items: center;
+   
 }
 
 .section1-description .section1-rows-center{
     color: white;
-    display: flex;
-    gap: 20px;
 }
 
 .section1-description .section1-rows-center a {
@@ -248,11 +220,8 @@ color: white;
 }
 
 .section1-description .section1-description-phone {
-    display: flex;
-    gap: 10px;
     border: 2px solid white;
     border-radius: 25px;
-    padding: 20px;
 }
 
 .section1-rows-right i {
@@ -276,39 +245,18 @@ color: white;
 .section2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 50px;
+    background-color: rgb(244, 244, 244);
 
 }
 
 .section2-left-side {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
     position: relative;
 }
 
 .section2-left-side p {
     width: 400px;
 }
-.section2-left-side-img {
-    position: absolute;
-    left: 500px;
-    top: 200px;
 
-}
-
-.section2-left-side-img-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    bottom: 100px;
-    left: 5px;
-    background-color: orange;
-    color: white;
-    width: 300px;
-}
 .section2-left-side h4 {
     font-size: 2rem;
 }
@@ -319,8 +267,6 @@ color: white;
 
 .section2-left-side-officer {
     display: flex;
-    align-items: center;
-    gap: 10px;
 }
 hr {
     width: 200px;
@@ -330,44 +276,38 @@ hr {
 .section2-left-side-officer img {
     border-radius: 50%;
     box-shadow: 0px 0px 10px 0px black;
-    padding: 5px;
     width: 100px;
     height: 100px;
 }
 .section2-left-side-reservation {
     position: absolute;
     display: grid;
-    gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     top: 650px;
     border: 1px solid rgb(238, 238, 238);
-    padding: 20px;
     background-color: white;
 }
 
 .section2-left-side-reservation h4 {
     font-size: 1.3rem;
 }
-
 .check-availability {
     display: flex;
-    align-items: center;
     color: white;
-    width: 100px;
 }
 .check-availability:hover {
     background-color: black;
     transition: background-color .3s linear;
 }
-.select-button {
-    display: flex;
-    justify-content: space-between;
-}
-
 /* Section 3 */
 
 .section3 {
-    padding: 50px;
+    margin-top: 100px;
+    background-color: rgb(218, 208, 208);
+}
+
+.section3 img {
+    background-size: cover;
 }
 
 .section3 .room {
@@ -382,22 +322,19 @@ hr {
 
 .room-description {
     border: 2px solid gray;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
     width: 350px;
     position: absolute;
     bottom: 0px;
     background-color: white;
-
 }
 
 .room-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100px;
+}
+
+.room-top:hover {
+    border-bottom: 1px solid gray;
+
 }
 
 .room-top h6 {
@@ -407,29 +344,32 @@ hr {
     height: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+    gap: 10px;
+    padding: 20px;
     display: none;
+}
+
+.room:hover .room-bottom {
+display: flex;
+}
+.room:hover .room-description {
+    transform: translateY(-40px);
 
 }
 
-.room-description:hover .room-bottom {
-    display: flex;
+.room-description {
+    transition: 1s ease;
 }
-.room-description:hover .room-top {
-    border-bottom: 1px solid gray;
 
-}
 .room-bottom-descriptions {
     display: flex;
-    justify-content: space-between;
 }
 
 .room-bottom-icons i {
     background-color: gray;
-    padding: 7px;
     border-radius: 25px;
     color: white;
+    padding: 10px;
 
 }
 
@@ -438,7 +378,6 @@ hr {
     background-color: orange;
     color: white;
     padding: 5px;
-    gap: 10px;
 }
 
 .circle {
@@ -455,10 +394,7 @@ hr {
 }
 .section3-end-icons {
     display: flex;
-    gap: 30px;
-    justify-content: center;
     margin-top: 20px;
-    align-items: center;
     cursor: pointer;
 }
 .section3-end-icons i {
@@ -468,42 +404,29 @@ hr {
 /* Section 4 */
 
 .section4 {
-    padding: 50px;
+    background-color: rgb(244, 244, 244);
+
+
+}
+.section4-title {
+    margin-top: -30px;
 }
 .section4-facilities {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    margin-top: 100px;
 }
 
 .row-box {
     border: 1px solid gray;
-    padding: 20px 0px;
-    padding: 10px;
+    padding: 20px 10px;
     height: 250px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
+    background-color: white;
 }
 
 .row-box i {
     font-size: 3rem;
     color: orange;
-}
-
-.row1, .row2, .row3 {
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
-}
-
-.row2 {
-    margin-top: 50px;
-}
-
-.row3 {
-    margin-top: 100px;
 }
 
 .section4-facilities img {
@@ -515,8 +438,18 @@ hr {
 /* Section 5  */
 
 .section5 {
-    padding: 50px;
     background-color: rgb(218, 208, 208);
+}
+
+.section5 img {
+    background-size: cover;
+    background-position: center;
+}
+
+.section5 a {
+    text-decoration: none;
+    text-align: center;
+    margin-right: 10px;
 }
 
 .section5-rooms-best-price {
@@ -526,26 +459,17 @@ hr {
 
 .section5-room {
     display: flex;
-    justify-content: center;
     margin-top: 30px;
 }
 
 .section5-room-description {
     border: 1px solid white;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 25px;
     background-color: white;
 }
 .section5-room-img {
     margin-top: 25px;
 }
 
-.service {
-    display: flex;
-    gap: 10px;
-}
 @keyframes btnStyle {
     from {
         transform: scale(0);
@@ -556,3 +480,227 @@ hr {
     }
 }
 
+/* Section 6  */
+
+.section6 {
+    background-color: rgb(244, 244, 244);
+}
+
+.section6-title-helpline {
+    background-color: white;
+    border-radius: 60px;
+}
+.section6-title-helpline i {
+    background-color: orange;
+    border-radius: 50%;
+
+}
+
+.section6-first-title h1:nth-child(2) {
+    width: 700px;
+    font-size: 3rem;
+}
+
+.section6-left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.section6-left-side button {
+    padding: 20px;
+    border: none;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: rgb(205, 198, 198);
+}
+
+.section6-left-side button:hover {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.section6-left-side button:hover span {
+    color: white;
+    transition: .5s ease;
+}
+
+.section6 span {
+    font-size: 1rem;
+    color: gray;
+}
+
+.section6 button:nth-child(1) {
+    background-color: orange;
+    color: white;
+}
+.section6-right-side {
+    display: flex;
+
+}
+.section6-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.section6 img {
+    width: 100%;
+    height: 500px;
+}
+
+.section6-right-side-text {
+    height: 500px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.fontsize2rem {
+    font-size: 2rem;
+}
+
+.accomodation-text {
+    margin-top: 30px;
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid orange;
+    width: 200px;
+    cursor: pointer;
+}
+
+.accomodation-text:hover h4 {
+    color: orange;
+    transition: .5s ease;
+}
+
+/* Footer */
+
+.footerColor {
+    background-color: rgb(56, 56, 56);
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.email-logo , .reservations-logo {
+    border-radius: 50%;
+}
+
+.footer-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bottom-newsletter form {
+    border: 1px solid white;
+    width: 350px;
+    background-color: black;
+}
+
+.bottom-newsletter form input::placeholder {
+    color: white;
+}
+
+.bottom-newsletter form input:focus {
+    border: none;
+    outline: none;
+    color: white;
+}
+.bottom-newsletter form input {
+    border: none;
+    background-color: transparent;
+}
+
+.bottom-newsletter button {
+    transition: transform 1s linear;
+
+}
+.bottom-newsletter button:hover {
+    transform: scale(1.1);
+}
+
+.bottom-newsletter form input button {
+border: none;
+}
+
+.footer-bottom h1 {
+    border-bottom: 1px solid orange;
+}
+
+.explore-texts p:hover {
+    color: orange;
+    cursor: pointer;
+    transition: color .6s linear;
+}
+
+.footer-all-rights-socials h4:hover {
+    color: orange;
+    transition: color .6s linear;
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+
+    .section2 {
+        grid-template-columns: 1fr;
+    }
+
+    .section3-rooms {
+        grid-template-columns: 1fr;
+    }
+
+    .section4-facilities {
+
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+   .section5-rooms-best-price {
+    grid-template-columns: 1fr;
+   }
+
+   .section6-content {
+    grid-template-columns: 1fr;
+   }
+
+   .section6-right-side h4 {
+    font-size: 1rem;
+   }
+
+   .section6-right-side {
+    font-size: 1rem;
+   }
+
+   .footer-top {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+   }
+
+   .footer-bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2rem;
+   }
+
+   .footer-all-rights {
+    flex-direction: column;
+    gap: 1rem;
+   }
+
+   .footer-all-rights-socials {
+    flex-direction: column;
+   }
+    
+}
