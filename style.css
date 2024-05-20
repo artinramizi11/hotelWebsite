@@ -354,11 +354,6 @@ hr {
     height: 100px;
 }
 
-.room-top:hover {
-    border-bottom: 1px solid gray;
-
-}
-
 .room-top h6 {
     font-size: 1rem;
 }
@@ -373,10 +368,6 @@ hr {
 
 .room:hover .room-bottom {
 display: flex;
-}
-.room:hover .room-description {
-    transform: translateY(-40px);
-
 }
 
 .room-description {
