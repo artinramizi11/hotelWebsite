@@ -253,10 +253,6 @@ color: white;
 
 }
 
-.section2-left-side {
-    position: relative;
-}
-
 .section2-left-side p {
     width: 400px;
 }
@@ -283,16 +279,21 @@ hr {
     width: 100px;
     height: 100px;
 }
-.section2-left-side-reservation {
+.section2-right-side-reservation {
     position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     top: 650px;
+    right: 200px;
     border: 1px solid rgb(238, 238, 238);
     background-color: white;
 }
 
-.section2-left-side-reservation h4 {
+.section2-right-side {
+    position: relative;
+}
+
+.section2-right-side-reservation h4 {
     font-size: 1.3rem;
 }
 .check-availability {
@@ -370,13 +371,15 @@ hr {
 display: flex;
 }
 
+
 .room-description {
-    transition: 1s ease;
+    transition-delay: 1s;
 }
 
 .room-bottom-descriptions {
     display: flex;
 }
+
 
 .room-bottom-icons i {
     background-color: gray;
@@ -678,7 +681,7 @@ border: none;
     }
 
 
-    .section2-left-side-reservation {
+    .section2-right-side-reservation {
         display: none;
     }
 
@@ -736,6 +739,10 @@ border: none;
     display: none;
    }
 
+   .section1-rows-center {
+    display: none;
+   }
+
  
    .section6-title-helpline      {
     width: 300px;
@@ -772,4 +779,76 @@ border: none;
     flex-direction: column;
    }
     
+}
+
+@media (max-width: 1000px) {
+
+    .section2-right-side img {
+        width: 100%;
+    }
+
+    .section2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section2-right-side-reservation {
+        top: 100px;
+        right: 400px;
+        grid-template-columns: 1fr;
+    }
+
+    .section5-rooms-best-price {
+        grid-template-columns: 1fr;
+    }
+
+    .section3-rooms {
+        grid-template-columns: 1fr;
+    }
+
+    .nav1 {
+        display: none;
+    }
+
+    .section1-nav {
+        flex-direction: column;
+    }
+
+    .section6-title {
+        flex-direction: column;
+        }
+}
+
+@media (max-width: 750px) {
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section1-rows-center {
+        display: none;
+    }
+
+    .section1-rows-right {
+        display: none;
+    }
+
+    .section5-room {
+        flex-direction: column;
+        }
+
+        .section1-title h1 {
+            display: none;
+        }     
+        
+        .section4-facilities {
+grid-template-columns: 1fr;   }
+
+.contact-us-text {
+    display: none;
+}
+.section2-right-side-reservation {
+    display: none;
+}
 }
