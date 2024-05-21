@@ -96,6 +96,7 @@
 }
 
 .section1-nav {
+
     position: sticky;
     top: 0;
 }
@@ -192,6 +193,10 @@ color: white;
 .section1-description {
     color: white;
    
+}
+
+.menu {
+    display: none;
 }
 
 .section1-description .section1-rows-center{
@@ -513,8 +518,6 @@ display: flex;
 }
 
 .section6-left-side {
-    display: flex;
-    flex-direction: column;
     gap: 10px;
 
 }
@@ -656,12 +659,22 @@ border: none;
 }
 
 @media (max-width:600px) {
+
+    .menu {
+        display: block;
+    }
     .nav1 {
         display: none;
     }
     
     .section1-nav {
         flex-direction: column;
+        gap: 20px;
+        position: relative;
+    }
+
+    .section1-navbar-about, .section1-navbar-blog, .section1-navbar-rooms-suites, .gallery, .section1-navbar-home{
+        display: none;
     }
 
     .section1-title h1 {
@@ -683,6 +696,9 @@ border: none;
 
     .section2-right-side-reservation {
         display: none;
+    }
+    .officer-description {
+        font-size: 10px;
     }
 
     .section2 img {
@@ -783,6 +799,7 @@ border: none;
 
 @media (max-width: 1000px) {
 
+
     .section2-right-side img {
         width: 100%;
     }
@@ -851,4 +868,15 @@ grid-template-columns: 1fr;   }
 .section2-right-side-reservation {
     display: none;
 }
+}
+
+
+@media (max-width: 1250px) {
+    .section2 img {
+        width: 100%;
+    }
+
+    .section5 img {
+        width: 100%;
+    }
 }
