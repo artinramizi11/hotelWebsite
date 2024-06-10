@@ -273,6 +273,10 @@ color: white;
 .section2-left-side-officer {
     display: flex;
 }
+
+.section2 img {
+    width: 100%;
+}
 hr {
     width: 200px;
     border-bottom: 3px solid gray;
@@ -374,6 +378,7 @@ hr {
 
 .room:hover .room-bottom {
 display: flex;
+transition: 1s ease;
 }
 
 
@@ -815,25 +820,16 @@ border: none;
         grid-template-columns: 1fr;
     }
 
-    .section5-rooms-best-price {
+    .section5-rooms-best-price, .section3-rooms {
         grid-template-columns: 1fr;
     }
-
-    .section3-rooms {
-        grid-template-columns: 1fr;
-    }
-
     .nav1 {
         display: none;
     }
 
-    .section1-nav {
+    .section1-nav, .section6-title {
         flex-direction: column;
     }
-
-    .section6-title {
-        flex-direction: column;
-        }
 }
 
 @media (max-width: 750px) {
@@ -843,40 +839,14 @@ border: none;
         flex-direction: column;
     }
 
-    .section1-rows-center {
-        display: none;
-    }
-
-    .section1-rows-right {
-        display: none;
-    }
-
     .section5-room {
         flex-direction: column;
-        }
-
-        .section1-title h1 {
-            display: none;
-        }     
+        } 
         
         .section4-facilities {
 grid-template-columns: 1fr;   }
 
-.contact-us-text {
+.contact-us-text, .section2-right-side-reservation, .section1-rows-center, .section1-rows-right,  .section1-rows-center, .section1-title h1{
     display: none;
 }
-.section2-right-side-reservation {
-    display: none;
-}
-}
-
-
-@media (max-width: 1250px) {
-    .section2 img {
-        width: 100%;
-    }
-
-    .section5 img {
-        width: 100%;
-    }
 }
